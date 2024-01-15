@@ -17,3 +17,13 @@ const db = getFirestore(app);
 const storage =getStorage(app);
 
 export {db, storage};
+// useEffect(()=>{
+//   const foodRef = collection(db,"FoodData");
+//   onSnapshot(foodRef,(e)=>{
+//     let data = e.docs.map((doc)=>{
+      
+//       return ({...doc.data()})
+//     })
+//     console.log(data)
+//   })
+// },[])
